@@ -25,12 +25,12 @@ if (la camisa de felipe esta limpia){
 
 //Felipe quiere ir a una fiesta, pero Felipe es menor de edad y esa fiesta daran alcohol. Ayuda a Felipe a decidir si puede o no ir a la fiesta.
 
-//Primer codigo de la fiesta con if 
+//Primer codigo de la fiesta con if
 
 const edadFelipe = 17;
 
-if (edadFelipe < 18){
-    console.log("Lo siento Felipe no puedes ir a la fiesta");
+if (edadFelipe < 18) {
+  console.log("Lo siento Felipe no puedes ir a la fiesta");
 }
 
 /*
@@ -41,12 +41,13 @@ Sentencia else ("Si no " o "de otro modo")
 
 //Segundo codigo de la fiesta con if y else
 
-const edadFelipe2 = 17; //Felipe es menor de edad 
+const edadFelipe2 = 17; //Felipe es menor de edad
 
-if (edadFelipe2 < 18) { //Si la sentencia es verdadera
+if (edadFelipe2 < 18) {
+  //Si la sentencia es verdadera
   console.log("Lo siento Felipe no puedes ir a la fiesta");
 } else {
-    console.log("Felipe puede ir a la fiesta"); //Si la sentencia es falsa se ejecuta esta otra linea de codigo
+  console.log("Felipe puede ir a la fiesta"); //Si la sentencia es falsa se ejecuta esta otra linea de codigo
 }
 
 //PROMPT NOS SIRVE PARA SOLICITAR DATOS AL USUARIO Y ALMACENARLOS EN UNA VARIABLE.
@@ -92,16 +93,19 @@ if (condicional){ //sies verdadero
 
 //!if nos da un solo resultado
 //!else nos da dos resultados
-//!if else nos da los resultados que nosotros queramos. 
+//!if else nos da los resultados que nosotros queramos.
 
 var hora = prompt("Ingresa solo la hora actual en formato de 24 horas");
 
-if (hora <= 13){ //si la hora es menor a 13 
-    console.log.apply("Es de mañana, desayuna rico");
-} else if (hora <=19){ //de otro modo si la hora es menor o igual a 19
-    console.log("Es de tarde, come rico")
-} else { //si no
-    console.log("Es de noche, cena rico");
+if (hora <= 13) {
+  //si la hora es menor a 13
+  console.log.apply("Es de mañana, desayuna rico");
+} else if (hora <= 19) {
+  //de otro modo si la hora es menor o igual a 19
+  console.log("Es de tarde, come rico");
+} else {
+  //si no
+  console.log("Es de noche, cena rico");
 }
 
 /*
@@ -113,18 +117,42 @@ Estructura de operador ternario
 resultado = (condicion)?valor1:valor2;
 
 */
-///Ayuda al profesor felipe a saber cuantos alumnos de su clase pasaron la materia. 
-
+///Ayuda al profesor felipe a saber cuantos alumnos de su clase pasaron la materia.
 
 var cantidaddereprobados = 30;
 
-if(cantidaddereprobados < 15){
-    cantidaddereprobados = "Felipe tuvo pocos reprobados";
+if (cantidaddereprobados < 15) {
+  cantidaddereprobados = "Felipe tuvo pocos reprobados";
 } else {
-    cantidaddereprobados = "Felipe tuvo muchos reprobados";
+  cantidaddereprobados = "Felipe tuvo muchos reprobados";
 }
 console.log(cantidaddereprobados);
 
 //Transformando a un operador ternario
 
-var reprobados = cantidaddereprobados <15? "Felipe tuvo pocos reprobados" : "Felipe tuvo muchos reprobados"; 
+var reprobados =
+  cantidaddereprobados < 15
+    ? "Felipe tuvo pocos reprobados"
+    : "Felipe tuvo muchos reprobados";
+
+//*Condicional Switch
+
+//Este condicional nos permite hacer multiples operaciones y tomar decisiones en funcion de distintos estados
+
+opcion = prompt("Ingresa una opcion del 1 al 14");
+switch (opcion) {
+  case "1":
+    console.log("Seleccionaste la opcion 1");
+    break;
+  case "2":
+    console.log("Seleccionaste la opcion 2");
+    break;
+  case "3":
+    console.log("Seleccionaste la opcion 3");
+    break;
+  case "4":
+    console.log("Seleccionaste la opcion 4");
+    break;
+  default:
+    console.log("Me quieres engañar, no estas ingresando una opcion valida");
+}

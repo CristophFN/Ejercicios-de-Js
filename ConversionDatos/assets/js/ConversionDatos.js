@@ -1,13 +1,12 @@
 //Conversion de datos
-console.log("Conversion de cadenas a numeros usando Number()")
+console.log("Conversion de cadenas a numeros usando Number()");
 console.log(Number("50")); //50
 console.log(Number("50.5")); //50.5
 console.log(Number("Diez")); //NaN
 console.log(Number("   ")); //0
 console.log(Number("10 10 10")); //NaN
 
-
-//El metodo parseInt analiza una cadena y devuelve un numero entero. Si permite espacios y solo devuelve el pprimer numero encontrado. 
+//El metodo parseInt analiza una cadena y devuelve un numero entero. Si permite espacios y solo devuelve el pprimer numero encontrado.
 console.log("Conversion de cadenas en numeros usando parseInt()");
 console.log(parseInt("-10")); //-10
 console.log(parseInt("10.55")); //10
@@ -15,13 +14,11 @@ console.log(parseInt("10 10 10 10")); //10
 console.log(parseInt("10 años")); //10
 console.log(parseInt("")); //NaN
 
-
 //El metodo parseFloat analiza la cadena y devuelve un numero decima. Si permite espacios y solo devuelve el primer numero enontrado.
 console.log("Conversion de cadenas en numeros usando parseFloat()");
 console.log(parseFloat("-10")); //-10
 console.log(parseFloat("10.55")); //10.55
 console.log(parseFloat("10 10.58 10 10")); //10
-
 
 //Conversion de numeros a cadenas.
 String(); //Convierte un numero a cadena
@@ -30,14 +27,12 @@ console.log(String(10)); //"10"
 console.log(String(10.5)); //"10.5"
 console.log(String(true)); //"true"
 console.log(String(false)); //"false"
-console.log(String(100+23)); //"123"
-
+console.log(String(100 + 23)); //"123"
 
 //Conversion de booleanos a numeros
 console.log("Conversion de booleanos a numeros usando Number()");
 console.log(Number(false)); //0
 console.log(Number(true)); //1
-
 
 //Conversion de numeros a booleanos
 console.log("Conversion de numeros a booleanos usando Boolean()");
@@ -86,17 +81,8 @@ console.log(Number(false), Number(false), Number(false)); //000
 //NaN
 console.log(Number("NaN")); //NaN
 console.log(String("NaN")); //NaN
-console.log(Boolean())
+console.log(Boolean());
 //Undefined
 console.log(Number(undefined)); //0
 console.log(String(undefined)); //"Undefined"
 console.log(Boolean(undefined)); //false
-
-
-
-
-
-
-
-
-
